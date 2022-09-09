@@ -1,12 +1,11 @@
 package queues;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 public class Main {
     public static void main(String[] args) {
-        Queue q = new Queue();
-        q.enQueue(4);
-        q.enQueue(4);
-        q.enQueue(4);
-        q.enQueue(4);
-        q.enQueue(4);
+        Deque<Integer> dq = new LinkedList<>();
+        dq.add(3);
     }
 }
