@@ -5,7 +5,7 @@ import org.w3c.dom.Node;
 
 public class LL {
 
-    private Node head;
+     Node head;
     Node tail;
     int size;
 

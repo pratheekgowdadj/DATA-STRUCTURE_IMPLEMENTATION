@@ -15,7 +15,8 @@ public class Main {
         tree.insert(14);
         tree.insert(4);
 
-        tree.inOrder();
+        System.out.print(Math.pow(212, 202));
+
 
     }
 }

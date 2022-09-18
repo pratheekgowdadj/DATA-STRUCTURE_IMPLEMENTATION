@@ -1,15 +1,35 @@
 package linkedlist;
 
+import org.w3c.dom.Node;
+
+import java.util.LinkedList;
+
 public class Main {
     public static void main(String[] args) {
 
+        LL list = new LL();
 
-       /* DLL list = new DLL();
-        list.insertFirst(3);
-        list.insertFirst(7);
-        list.insertFirst(11);
-        list.insertFirst(13);
-        list.insertFirst(17);
-        list.display();*/
+        list.insert(1,1);
+        list.insert(2,2);
+        list.insert(3,3);
+        list.insert(4,4);
+        //reverseList(list.head);
+
+        System.out.print(reverseList(list.head));
+
+
     }
+
+    static LL.Node reverseList(LL.Node head){
+        if(head == null || head.next == null)
+            return head;
+
+        LL.Node root = reverseList(head.next);
+
+        head.next.next = head;
+        head.next = null;
+        return root;
+
+    }
+
 }
