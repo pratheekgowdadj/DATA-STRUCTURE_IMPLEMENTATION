@@ -65,7 +65,7 @@ public class MergeSort {
             j++;
             k++;
         }
-        System.arraycopy(res, 0, arr, start + 0, res.length);
+        System.arraycopy(res, 0, arr, start, res.length);
     }
 
     private static int[] merge(int[] left, int[] right) {
