@@ -1,32 +1,15 @@
 package randomn_practice;
 
-import java.util.HashSet;
-
 public class Practice {
-    public static void main (String[] args)
-    {
-        int [] arr = {3,2,1,18,9};
-        int target = 7;
+    public static void main(String[] args) {
+        String str = "AACECAAAA";
 
-        System.out.println(LS(arr, target, 0));
+        StringBuilder s = new StringBuilder();
 
+        s.append(str);
+        String rev = s.reverse().toString();
+        s.reverse().append("$").append(rev);
 
+        System.out.println(s);
     }
-
-    static boolean LS(int[] arr, int target, int index)
-    {
-        if(index == arr.length ) return false;
-        return arr[index] == target || LS(arr, target, index + 1) ;
-    }
-
-    static boolean sorted(int[] arr, int i)
-    {
-
-        if(i == arr.length - 1) return true;
-
-        return arr[i] < arr[i + 1] & sorted(arr,i + 1);
-    }
-
-
-
 }
